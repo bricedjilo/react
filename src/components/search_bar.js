@@ -7,11 +7,9 @@ class SearchBar extends Component {
     }
     render() {
         return (
-            <div className="form-group">
-                <input type="text" className="form-control"
-                    value={this.state.term}
-                    onChange={event => this.setState({term: event.target.value})} />
-                Value of the input: <output>{this.state.term}</output>
+            <div className="form-group search-bar">
+                <input type="text" className="form-control" value={this.state.term}
+                onChange={event => this.setState({term: event.target.value})} />
             </div>
         );
     }
